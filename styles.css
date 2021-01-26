@@ -46,7 +46,7 @@ html {
 }
 /* ========== HEADER ========== */
 .header {
-  border-bottom: 1px solid #ececec;
+  outline: #ececec;
   min-height: 80px;
 }
 .navigation {
@@ -151,6 +151,7 @@ html {
 }
 .modal-btn {
   font-family: inherit;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -158,11 +159,12 @@ html {
   color: var(--second-text-color);
   background-color: var(--accent-color);
   padding: 10px 32px;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  top: 430px;
+  white-space: nowrap;
 }
 .modal-btn :hover,
 .modal-btn :focus {
@@ -170,11 +172,13 @@ html {
 }
 /* ========== END HERO ========== */
 /* ========== BENEFITS ========== */
+.benefits {
+  padding-top: 94px;
+}
 .benefits-list {
   display: flex;
   padding-left: 0;
-  margin: 0;
-  margin-top: 94px;
+  margin: 0;  
 }
 .benefits-list-item {
   min-height: 101px;
@@ -202,12 +206,15 @@ html {
 /* ========== END BENEFITS  ========== */
 
 /* ========== ABOUT US  ========== */
-
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .about-list {
   display: flex;
   padding-left: 0;
   margin: 0;  
-  margin-bottom: 94px;
+  
 }
 .about-list-item {
   height: 294px;
@@ -220,7 +227,7 @@ html {
 /* ========== TEAM  ========== */
 
 .title {
-  padding-top: 94px;
+  
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -233,11 +240,11 @@ html {
 }
 .team {
   background-color: var(--section-team-color);
-  
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
-  padding-bottom: 94px;
   padding-left: 0;
   margin: 0;
 }
