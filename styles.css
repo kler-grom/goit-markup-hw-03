@@ -12,6 +12,8 @@
 /* Убираем маркировку ссылок */
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 /* Убираем подчеркивание у ссылок */
 a {
@@ -39,11 +41,13 @@ html {
   box-sizing: border-box;
 }
 .conteiner {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.section {
+  padding: 94px 0;
 }
 /* ========== HEADER ========== */
 .header {
@@ -64,7 +68,6 @@ html {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  height: 31px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -77,10 +80,8 @@ html {
 }
 .navigation-list {
   display: flex;
-
   align-items: center;
-  padding: 0;
-  margin-left: 40px;
+  margin-left: 93px;
 }
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
@@ -105,10 +106,7 @@ html {
 }
 .contact-header-list {
   display: flex;
-  padding: 0;
-  margin: 0;
   margin-left: auto;
-  justify-content: flex-end;
 }
 .contact-header-item:not(:last-child) {
   margin-right: 50px;
@@ -130,15 +128,14 @@ html {
 .tel-link-header:focus {
   color: var(--accent-color);
 }
-.main-nav {
+/* .main-nav {
   width: 1170px;
-}
+} */
 /* ========== END HEADER ========== */
 /* ========== HERO ========== */
 
 .hero {
   background-color: var(--accent-background);
-  min-height: 200px;
   padding: 200px 0px;
   text-align: center;
 }
@@ -170,6 +167,7 @@ html {
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border-color: transparent;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -179,14 +177,12 @@ html {
 }
 /* ========== END HERO ========== */
 /* ========== BENEFITS ========== */
-.benefits {
-  padding-top: 94px;
-}
 .benefits-list {
   display: flex;
-  padding-left: 0;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
 .benefits-list-item {
   width: 270px;
 }
@@ -212,18 +208,20 @@ html {
 /* ========== END BENEFITS  ========== */
 
 /* ========== ABOUT US  ========== */
-.about {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.abouut {
+  padding-top: 0;
 }
+
 .about-list {
   display: flex;
   padding-left: 0;
   margin: 0;
 }
+
 .about-list-item {
   height: 294px;
 }
+
 .about-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -239,13 +237,9 @@ html {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  min-height: 42px;
-  margin-top: 0;
 }
 .team {
   background-color: var(--section-team-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .team-card-text {
   padding: 30px 15px;
@@ -298,8 +292,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list {
-  margin-top: 0;
-  padding-left: 0;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -337,10 +329,6 @@ input[type="radio"].visually-hidden {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  box-sizing: border-box;
 }
 
 .portfolio-text {
